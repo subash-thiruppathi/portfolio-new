@@ -7,7 +7,7 @@
   <meta name="description" content="Subash Thiruppathy — Full-Stack Developer with 4+ years building enterprise web & mobile apps with Angular, React, NestJS and Spring Boot. Hyderabad, India." />
   <meta name="theme-color" content="#09080c" />
   <meta property="og:title" content="Subash Thiruppathy — Full-Stack Developer" />
-  <meta property="og:description" content="Enterprise web & mobile apps, microservices, payments at scale, AI-assisted development." />
+  <meta property="og:description" content="Enterprise web & mobile apps, microservices, payments at scale, real-time data engineering." />
   <meta property="og:image" content="assets/subash.jpg" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2309080c'/><text x='50%' y='56%' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-size='38' fill='%23f2eefb'>S</text><circle cx='50' cy='48' r='5' fill='%23a78bfa'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -93,8 +93,8 @@
         <div class="about__text">
           <p class="eyebrow reveal">// SYSTEM PROFILE</p>
           <h2 class="h-display reveal">Hello, I'm<br /><span class="grad">Subash Thiruppathy</span></h2>
-          <p class="lead reveal">A Full-Stack Developer with <strong>4+ years</strong> of experience building enterprise web and mobile applications with Angular, React, NestJS and Spring Boot. I care about production reliability, clean microservices and payment/webhook integrations that just work. I build faster with AI tools like Claude Code, and I'm currently learning the fundamentals of Kafka and real-time data pipelines.</p>
-          <p class="muted reveal">Based in Hyderabad, India · Cross-functional collaborator, mentor, and the person you call when production breaks.</p>
+          <p class="lead reveal">A Full-Stack Developer with <strong>4+ years</strong> of experience building enterprise web and mobile applications with Angular, React, NestJS and Spring Boot. I care about production reliability, clean microservices and payment/webhook integrations that just work — and I'm expanding into real-time data engineering with Kafka, Debezium and Medallion Architecture.</p>
+          <p class="muted reveal">Based in Hyderabad, India · Cross-functional collaborator, mentor, and hands-on with production incident diagnosis.</p>
 
           <div class="stats reveal">
             <div class="stat"><b data-count="4" data-suffix="+">0</b><span>Years<br/>Full-Stack</span></div>
@@ -112,7 +112,7 @@
         <div class="section-head reveal">
           <p class="eyebrow">// ENGINEERING ROADMAP</p>
           <h2 class="h-section">Core Execution Road Map</h2>
-          <p class="muted">Four areas I work across — from the screen a user taps to the deploy pipeline behind it.</p>
+          <p class="muted">Four layers I work across end-to-end — from the screen a user taps to the data pipeline behind it.</p>
         </div>
 
         <div class="roadmap__grid">
@@ -139,9 +139,9 @@
           </article>
           <article class="rcard reveal">
             <p class="mono rcard__id">// ROOT 04</p>
-            <h3>AI-Assisted Development</h3>
-            <p>Claude Code, Cursor and GitHub Copilot in my daily workflow — faster features, refactoring, debugging and code review without dropping production quality.</p>
-            <div class="rcard__tag">Claude Code · Cursor · Copilot</div>
+            <h3>Data Engineering</h3>
+            <p>Real-time CDC with Debezium → Kafka → MariaDB into a Bronze analytics layer, orchestrated by Dagster and monitored with Prometheus &amp; Loki.</p>
+            <div class="rcard__tag">Kafka · Debezium · Dagster</div>
           </article>
         </div>
       </div>
@@ -163,7 +163,7 @@
           <button class="chip" data-filter="be" role="tab" aria-selected="false">Backend</button>
           <button class="chip" data-filter="db" role="tab" aria-selected="false">Databases</button>
           <button class="chip" data-filter="ops" role="tab" aria-selected="false">Cloud &amp; DevOps</button>
-          <button class="chip" data-filter="data" role="tab" aria-selected="false">Learning</button>
+          <button class="chip" data-filter="data" role="tab" aria-selected="false">Data</button>
           <button class="chip" data-filter="more" role="tab" aria-selected="false">Mobile · AI · Tools</button>
         </div>
 
@@ -195,37 +195,39 @@
               <div><b>8–10K</b><span>payments / day via Razorpay &amp; Jio</span></div>
               <div><b>~300ms</b><span>API response, down from ~800ms</span></div>
               <div><b>0</b><span>records lost migrating 180K+ into Ingres</span></div>
-              <div><b>2</b><span>app stores shipped to: Play Store &amp; App Store</span></div>
+              <div><b>29</b><span>prod tables replicated via CDC</span></div>
             </div>
           </aside>
 
           <ol class="exp__list">
             <li class="reveal"><span class="mono">01</span><p>Architected and shipped enterprise <b>web and mobile applications</b> using Angular, React, NestJS and Spring Boot — from design through production deployment.</p></li>
             <li class="reveal"><span class="mono">02</span><p>Designed modular <b>REST APIs</b> documented with Swagger/OpenAPI following microservices principles, streamlining integration for downstream teams.</p></li>
-            <li class="reveal"><span class="mono">03</span><p>Integrated <b>Razorpay and Jio payment gateways</b> with secure webhook processing, handling 8,000–10,000 transactions per day.</p></li>
+            <li class="reveal"><span class="mono">03</span><p>Integrated <b>Razorpay and Jio payment gateways</b> with secure <b>HMAC-signature webhook verification</b>, handling 8,000–10,000 transactions per day.</p></li>
             <li class="reveal"><span class="mono">04</span><p>Migrated <b>180,000+ production records</b> into Ingres with zero data loss and minimal downtime.</p></li>
             <li class="reveal"><span class="mono">05</span><p>Optimized complex SQL across MySQL, PostgreSQL and Ingres, cutting average query/API response time from <b>~800ms to ~300ms</b>.</p></li>
             <li class="reveal"><span class="mono">06</span><p>Automated <b>deployment pipelines</b> with Terraform, GitHub Actions, Docker, PM2 and Nginx, cutting manual release effort.</p></li>
             <li class="reveal"><span class="mono">07</span><p>Built <b>Redis-backed async notification services</b>, improving SMS and notification throughput; implemented JWT auth and RBAC across production systems.</p></li>
-            <li class="reveal"><span class="mono">08</span><p>Used <b>Claude Code, Cursor and GitHub Copilot</b> to speed up feature development, refactoring, debugging and code review — including supporting a Kafka-based data pipeline while learning its fundamentals.</p></li>
-            <li class="reveal"><span class="mono">09</span><p>Published and maintained mobile apps on <b>Google Play and the App Store</b>, incl. TestFlight beta distribution; mentored junior developers and joined architecture reviews.</p></li>
+            <li class="reveal"><span class="mono">08</span><p>Applied AI-assisted development tools (<b>Claude Code, Cursor, GitHub Copilot, ChatGPT</b>) to accelerate feature development, refactoring, debugging and code review while maintaining production quality.</p></li>
+            <li class="reveal"><span class="mono">09</span><p>Contributing to a <b>Debezium → Kafka → MariaDB CDC pipeline</b> replicating 29 production tables into a Bronze analytics layer, building hands-on expertise with Kafka Connect and Medallion Architecture.</p></li>
+            <li class="reveal"><span class="mono">10</span><p>Published and maintained mobile apps on <b>Google Play and the App Store</b>, incl. TestFlight beta distribution; mentored junior developers and joined architecture reviews.</p></li>
           </ol>
         </div>
 
         <!-- Incident story -->
         <article class="incident reveal">
           <div class="incident__head">
-            <span class="mono incident__badge">● AI-ASSISTED DEBUGGING</span>
-            <span class="mono muted">RESOLVED WITH CLAUDE CODE</span>
+            <span class="mono incident__badge">● INCIDENT REPORT</span>
+            <span class="mono muted">RESOLVED · ZERO DATA LOSS</span>
           </div>
-          <h3>Debugging a 19-hour pipeline outage</h3>
-          <p>A Kafka-based data pipeline stopped while health checks still reported <em>normal</em>. With only basic Kafka knowledge, I worked through it step by step with Claude Code — and learned how the pipeline really works along the way.</p>
+          <h3>The 19-hour CDC sync outage</h3>
+          <p>Monitoring dashboard alerts showed analytics tables with <em>stale timestamps</em> — even though transactions were still flowing. I traced the root cause to a concurrent legacy data migration whose data type mismatches were blocking the Debezium/Kafka pipeline, then coordinated the fix with the migration team.</p>
           <div class="incident__trace mono">
-            <span>$ inspect kafka-connect offsets</span>
-            <span>$ replay schema-history topics</span>
-            <span>$ grep connector logs</span>
-            <span>$ diff dagster execution history</span>
-            <span class="ok">✓ failure pinpointed — pipeline restored</span>
+            <span class="warn">⚠ alert: analytics tables stale, transactions still flowing</span>
+            <span>$ check debezium / kafka connector status</span>
+            <span>$ correlate with concurrent jobs → legacy migration</span>
+            <span class="err">✗ root cause: data type mismatches blocking CDC</span>
+            <span>→ coordinated fix with migration team</span>
+            <span class="ok">✓ sync resumed — zero data loss</span>
           </div>
         </article>
       </div>
@@ -277,17 +279,17 @@
           </article>
 
           <article class="proj reveal">
-            <div class="proj__top"><span class="mono">PROJECT 04</span><span class="mono proj__cat">LEARNING · AI-ASSISTED</span></div>
-            <h3>Kafka Data Pipeline — Learning with Claude Code</h3>
+            <div class="proj__top"><span class="mono">PROJECT 04</span><span class="mono proj__cat">DATA ENGINEERING</span></div>
+            <h3>Real-Time CDC Analytics Pipeline</h3>
             <ul>
-              <li>Worked on a Debezium → Kafka → MariaDB pipeline with Claude Code as my pair programmer.</li>
-              <li>Learned core Kafka concepts: topics, connectors, offsets and change data capture.</li>
-              <li>Explored the idea of Medallion Architecture (Bronze / Silver / Gold layers).</li>
+              <li>Debezium → Kafka → MariaDB change-data-capture replicating 29 production tables.</li>
+              <li>Feeds a Bronze analytics layer following Medallion Architecture.</li>
+              <li>Orchestrated with Dagster; monitored via Prometheus &amp; Loki dashboards.</li>
             </ul>
             <div class="flow mono" aria-label="Pipeline flow">
-              <span>Debezium</span><i>→</i><span>Kafka</span><i>→</i><span>MariaDB</span>
+              <span>Debezium</span><i>→</i><span>Kafka</span><i>→</i><span>MariaDB</span><i>→</i><span>Bronze</span>
             </div>
-            <div class="tags"><span>Kafka (basics)</span><span>Debezium</span><span>Claude Code</span></div>
+            <div class="tags"><span>Kafka Connect</span><span>Debezium</span><span>Dagster</span><span>Prometheus</span><span>Loki</span></div>
           </article>
         </div>
 
@@ -341,7 +343,7 @@
     <div class="container footer__top">
       <div>
         <p class="mono muted">// CURRENTLY</p>
-        <p>Full-Stack Developer @ Finstein<br/>Learning Kafka &amp; data pipelines</p>
+        <p>Full-Stack Developer @ Finstein<br/>Expanding into real-time data engineering</p>
       </div>
       <div>
         <p class="mono muted">// STATUS</p>

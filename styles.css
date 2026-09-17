@@ -321,6 +321,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .incident__trace span:nth-child(3) { animation-delay: 0.5s !important; }
 .incident__trace span:nth-child(4) { animation-delay: 0.75s !important; }
 .incident__trace span:nth-child(5) { animation-delay: 1.1s !important; }
+.incident__trace span:nth-child(6) { animation-delay: 1.35s !important; }
+.incident__trace .warn { color: #fbbf24; }
+.incident__trace .err { color: #fca5a5; }
 @keyframes type { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
 
 @media (max-width: 900px) {

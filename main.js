@@ -174,7 +174,7 @@
     be: { color: "#a78bfa", items: ["Node.js", "NestJS", "Express.js", "Spring Boot", "REST APIs", "Swagger / OpenAPI", "JWT", "RBAC", "Webhooks", "Microservices"] },
     db: { color: "#34d399", items: ["MySQL", "PostgreSQL", "Ingres DB", "Redis"] },
     ops: { color: "#f472b6", items: ["AWS", "Docker", "Terraform", "Jenkins", "GitHub Actions", "PM2", "Nginx", "Linux"] },
-    data: { color: "#fb923c", items: ["Apache Kafka (basics)", "Debezium (basics)", "Medallion Architecture (concepts)"] },
+    data: { color: "#fb923c", items: ["Apache Kafka", "Kafka Connect", "Debezium", "Dagster", "Medallion Architecture", "Prometheus", "Loki"] },
     more: { color: "#e5e7eb", items: ["Google Play Store", "Apple App Store", "TestFlight", "Claude Code", "Cursor", "GitHub Copilot", "ChatGPT", "Git", "Postman", "Jira", "DBeaver", "VS Code"] },
   };
   const pills = $("#pills");
