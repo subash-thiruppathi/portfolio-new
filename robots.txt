@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://subash-thiruppathi.github.io/portfolio-new/sitemap.xml
