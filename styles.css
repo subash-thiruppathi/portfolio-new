@@ -327,6 +327,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible {
 }
 
 .portrait-frame {
+  width:100%;
   position:relative;
   isolation:isolate;
   overflow:hidden;
@@ -554,6 +555,62 @@ button:focus-visible,input:focus-visible,textarea:focus-visible {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:24px
+}
+
+.projects__label {
+  margin:0 0 16px
+}
+
+.projects__intro {
+  max-width:850px;
+  margin:0 0 26px
+}
+
+.products__grid {
+  margin-bottom:48px
+}
+
+.product .proj__top {
+  flex-wrap:wrap;
+  align-items:center
+}
+
+.product__status {
+  font-size:.7rem;
+  color:var(--accent);
+  background:#edf2e8;
+  padding:4px 9px;
+  border-radius:5px
+}
+
+.product__summary {
+  margin:0 0 18px;
+  font-size:.95rem
+}
+
+.product__links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 20px;
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid var(--line)
+}
+
+.product__links a {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:44px;
+  color:var(--accent);
+  font-size:.84rem;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:4px
+}
+
+.product__links a:hover {
+  color:var(--text)
 }
 
 .proj {

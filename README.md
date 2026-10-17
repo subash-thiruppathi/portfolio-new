@@ -2,6 +2,17 @@
 
 A responsive, static portfolio built with HTML, CSS, and vanilla JavaScript. No build step or dependencies.
 
+## Featured products
+
+The Selected Work section presents four independent products before the existing enterprise projects:
+
+- **Spekra**: nine-suite observability and operations, linked to [spekra.in](https://spekra.in/) and its source repository.
+- **CrewProof**: cleaning checklists, evidence, supervisor review and client handoff.
+- **KitReserve**: complete-kit availability, serialized checkout and partial returns.
+- **RepairRelay**: workshop intake, versioned approvals, parts and pickup.
+
+The three pilot products link to their GitHub repositories and end-to-end guides. Their cards describe implemented scope without claiming public production readiness. Product summaries are present in static HTML and the page's structured data, so they remain readable without JavaScript.
+
 ## Local preview
 
 Run `python3 -m http.server 4173 --bind 127.0.0.1` in this directory and open <http://127.0.0.1:4173>.
