@@ -216,7 +216,7 @@
         <div class="section-head reveal"><p class="eyebrow">02 / SELECTED WORK</p><h2 class="h-section">Complex problems.<br /><span class="grad">Practical solutions.</span></h2><p class="muted">Independent products I’m building, alongside enterprise applications and engineering projects I’ve contributed to.</p></div>
 
         <p class="eyebrow projects__label">SPEKRA OPERATIONAL RELIABILITY PORTFOLIO · COMMERCIAL ENGINES</p>
-        <p class="muted projects__intro">Eight specialized, zero-trust SaaS engines engineered to solve hard failure modes in production architectures. Run all eight in 60 seconds with our unified multi-engine diagnostic scanner (<code>npx spekra doctor</code>). Each engine features offline HMAC licensing, cryptographic SOC 2 / ISO 27001 auditor packs, dynamic SVG trust badges, 60-second diagnostic CLI scanners, composite GitHub Actions, and dedicated production deployments.</p>
+        <p class="muted projects__intro">Twelve specialized, zero-trust SaaS engines engineered to solve hard failure modes in production architectures. Run all twelve in 60 seconds with our unified multi-engine diagnostic scanner (<code>npx spekra doctor</code>). Each engine features offline HMAC licensing, cryptographic SOC 2 / ISO 27001 auditor packs, dynamic SVG trust badges, 60-second diagnostic CLI scanners, composite GitHub Actions, and dedicated production deployments.</p>
         <div class="proj__grid products__grid">
           <article class="proj product reveal" id="product-restoreproof" aria-labelledby="title-restoreproof">
             <div class="proj__top"><span class="mono">DISASTER RECOVERY · CONTINUOUS PROOF</span><span class="product__status">v1.0.0 Live</span></div>
@@ -320,6 +320,58 @@
             </ul>
             <div class="tags"><span>Node.js</span><span>PostgreSQL</span><span>Secret Vaults</span><span>SOC 2 CC6.1</span><span>GitHub Action</span></div>
             <div class="product__links"><a href="https://rotationproof.spekra.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit RotationProof website">Visit website <span aria-hidden="true">↗</span></a><a href="https://github.com/subash-thiruppathi/RotationProof" target="_blank" rel="noopener noreferrer" aria-label="View RotationProof on GitHub">GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="proj product reveal" id="product-envproof" aria-labelledby="title-envproof">
+            <div class="proj__top"><span class="mono">CONFIGURATION · LEAK PREVENTION</span><span class="product__status">v1.0.0 Live</span></div>
+            <h3 id="title-envproof">EnvProof</h3>
+            <p class="product__summary">Zero-exposure environment variable drift scanner, manifest reconciler, and frontend credential leak guard for CI/CD.</p>
+            <ul>
+              <li>Static AST analysis discovers environment variables in JS/TS/Python without reading raw secret values.</li>
+              <li>Reconciles code dependencies against .env.example, Dockerfile, and GitHub Actions declarations.</li>
+              <li>SOC 2 (CC6.8) &amp; ISO 27001 (A.12.1.2) auditor pack generation and dynamic SVG trust badges.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>AST Parser</span><span>Secret Boundaries</span><span>SOC 2 CC6.8</span><span>GitHub Action</span></div>
+            <div class="product__links"><a href="https://envproof.spekra.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit EnvProof website">Visit website <span aria-hidden="true">↗</span></a><a href="https://github.com/subash-thiruppathi/EnvProof" target="_blank" rel="noopener noreferrer" aria-label="View EnvProof on GitHub">GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="proj product reveal" id="product-cronproof" aria-labelledby="title-cronproof">
+            <div class="proj__top"><span class="mono">BACKGROUND JOBS · HEARTBEAT GUARDS</span><span class="product__status">v1.0.0 Live</span></div>
+            <h3 id="title-cronproof">CronProof</h3>
+            <p class="product__summary">Batch workload overlap detector, timezone drift verifier, and dead-man switch heartbeat auditor for background tasks.</p>
+            <ul>
+              <li>Multi-framework AST schedule discovery across Node.js, Python Celery, and Kubernetes CronJobs.</li>
+              <li>Guards against sub-minute concurrency stampedes, timezone skew, and silent execution drops.</li>
+              <li>SOC 2 (CC7.2) &amp; ISO 27001 (A.12.1.2) compliance evidence bundle and dynamic SVG badges.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>Cron AST</span><span>Dead-Man Switch</span><span>SOC 2 CC7.2</span><span>GitHub Action</span></div>
+            <div class="product__links"><a href="https://cronproof.spekra.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit CronProof website">Visit website <span aria-hidden="true">↗</span></a><a href="https://github.com/subash-thiruppathi/CronProof" target="_blank" rel="noopener noreferrer" aria-label="View CronProof on GitHub">GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="proj product reveal" id="product-egressproof" aria-labelledby="title-egressproof">
+            <div class="proj__top"><span class="mono">DATA EGRESS · PII/PHI REDACTION</span><span class="product__status">v1.0.0 Live</span></div>
+            <h3 id="title-egressproof">EgressProof</h3>
+            <p class="product__summary">Outbound network boundary auditor, LLM prompt sanitizer, and customer PII/PHI egress leak protection engine.</p>
+            <ul>
+              <li>Inspects outbound HTTP/API client destinations and flags unredacted sensitive customer fields.</li>
+              <li>Protects AI prompt pipelines against accidental training data leaks and credit card/SSN leakage.</li>
+              <li>HIPAA § 164.312 &amp; GDPR Article 32 compliance auditor pack with SHA-256 seal.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>LLM Sanitizer</span><span>HIPAA § 164.312</span><span>GDPR Art 32</span><span>GitHub Action</span></div>
+            <div class="product__links"><a href="https://egressproof.spekra.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit EgressProof website">Visit website <span aria-hidden="true">↗</span></a><a href="https://github.com/subash-thiruppathi/EgressProof" target="_blank" rel="noopener noreferrer" aria-label="View EgressProof on GitHub">GitHub <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="proj product reveal" id="product-rateproof" aria-labelledby="title-rateproof">
+            <div class="proj__top"><span class="mono">RATE RESILIENCE · RETRY STORMS</span><span class="product__status">v1.0.0 Live</span></div>
+            <h3 id="title-rateproof">RateProof</h3>
+            <p class="product__summary">Rate-limit resilience auditor, 429 retry storm simulator, and circuit breaker health analyzer for high-scale APIs.</p>
+            <ul>
+              <li>Classifies outbound retry strategies, exponential backoff, and full randomized jitter desynchronization.</li>
+              <li>Detects missing circuit breaker protection and cascading failure hazards during third-party API degradation.</li>
+              <li>SOC 2 (CC7.1) capacity and availability evidence bundles with SHA-256 seals.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>Circuit Breaker</span><span>Exponential Backoff</span><span>SOC 2 CC7.1</span><span>GitHub Action</span></div>
+            <div class="product__links"><a href="https://rateproof.spekra.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit RateProof website">Visit website <span aria-hidden="true">↗</span></a><a href="https://github.com/subash-thiruppathi/RateProof" target="_blank" rel="noopener noreferrer" aria-label="View RateProof on GitHub">GitHub <span aria-hidden="true">↗</span></a></div>
           </article>
         </div>
 
